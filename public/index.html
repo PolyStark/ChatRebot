@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多人聊天机器人</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>多人聊天机器人</h1>
+            <div id="online-count">在线用户: 1</div>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="输入消息...">
+            <button id="send-button">发送</button>
+        </div>
+    </div>
+
+    <!-- 用户名弹窗 -->
+    <div id="username-modal" class="modal">
+        <div class="modal-content">
+            <h2>小宝贝，你来啦！</h2>
+            <input type="text" id="username-input" placeholder="输入你的昵称">
+            <button id="username-submit">进入</button>
+        </div>
+    </div>
+
+    <!-- Socket.io 客户端库 -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
