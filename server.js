@@ -1,3 +1,4 @@
+console.log("✅ Server is starting...");
 const express = require('express');
 const socketio = require('socket.io');
 const path = require('path');
